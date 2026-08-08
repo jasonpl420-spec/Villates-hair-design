@@ -1,0 +1,2122 @@
+<!hh3ddDOCTYPE html>
+<html lang="en"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Villate’s Hair Design | Barber Shop in Margate, FL</title>
+
+
+  <meta
+    name="description"
+    content="Villate’s Hair Design — full barber services in Margate, Florida. Call +1 (954) 975-4662."
+  >
+
+
+  <!-- Pico CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+  >
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <style>
+
+
+    :root {
+      --gold: #c49a55;
+      --gold-light: #e1bd7a;
+      --black: #0d0d0d;
+      --dark: #151515;
+      --cream: #f4efe6;
+      --gray: #b8b8b8;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+      margin: 0;
+      background: var(--black);
+      color: white;
+      font-family: "Inter", sans-serif;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    nav strong {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+
+    /* Navigation */
+
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13, 13, 13, .96);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      backdrop-filter: blur(10px);
+    }
+
+
+    nav a {
+      color: white;
+    }
+
+
+    nav a:hover {
+      color: var(--gold-light);
+    }
+
+
+    nav strong {
+      letter-spacing: .08em;
+    }
+
+
+    /* Hero */
+
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(0,0,0,.94) 0%,
+          rgba(0,0,0,.78) 45%,
+          rgba(0,0,0,.30) 100%
+        ),
+        url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+    }
+
+
+    .hero-content {
+      max-width: 760px;
+      padding: 6rem 0;
+    }
+
+
+    .eyebrow {
+      color: var(--gold-light);
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+
+    h1 {
+      font-size: clamp(3.5rem, 9vw, 7rem);
+      line-height: .9;
+      margin: .6rem 0 1.5rem;
+    }
+
+
+    .hero p {
+      max-width: 620px;
+      color: #ddd;
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
+
+    /* Buttons */
+
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+
+    .gold-button {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #111;
+      font-weight: 700;
+    }
+
+
+    .gold-button:hover {
+      background: var(--gold-light);
+      border-color: var(--gold-light);
+      color: #111;
+    }
+
+
+    .outline-button {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.5);
+      color: white;
+    }
+
+
+    .outline-button:hover {
+      border-color: var(--gold-light);
+      color: var(--gold-light);
+    }
+
+
+    /* Sections */
+
+
+    section {
+      padding: 6rem 0;
+    }
+
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 3rem;
+    }
+
+
+    .section-heading p {
+      color: #999;
+      line-height: 1.8;
+    }
+
+
+    /* Services */
+
+
+    .services {
+      background: var(--dark);
+    }
+
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+
+    .service-card {
+      background: #202020;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 14px;
+      padding: 2.2rem;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(196,154,85,.6);
+    }
+
+
+    .service-number {
+      color: var(--gold);
+      font-family: "Oswald", sans-serif;
+      font-size: 1.5rem;
+    }
+
+
+    .service-card p {
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+
+    /* About */
+
+
+    .about {
+      background: var(--cream);
+      color: #151515;
+    }
+
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+
+    .about-image {
+      min-height: 500px;
+      border-radius: 16px;
+
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0,0,0,.05),
+          rgba(0,0,0,.45)
+        ),
+        url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=85")
+        center / cover;
+    }
+
+
+    .about p {
+      line-height: 1.9;
+      color: #555;
+    }
+
+
+    /* Contact */
+
+
+    .contact {
+      background: var(--black);
+    }
+
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+
+
+    .contact-card {
+      background: var(--dark);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 14px;
+      padding: 2.5rem;
+    }
+
+
+    .contact-card p {
+      color: var(--gray);
+      line-height: 1.8;
+    }
+
+
+    .phone {
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      font-weight: 700;
+    }
+
+
+    .address {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: white;
+    }
+
+
+    /* CTA */
+
+
+    .cta {
+      background:
+        linear-gradient(
+          rgba(0,0,0,.82),
+          rgba(0,0,0,.82)
+        ),
+        url("https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+
+
+      text-align: center;
+    }
+
+
+    .cta-content {
+      max-width: 700px;
+      margin: auto;
+    }
+
+
+    /* Footer */
+
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      color: #888;
+    }
+
+
+    footer a {
+      color: #aaa;
+    }
+
+
+    /* Mobile */
+
+
+    @media (max-width: 800px) {
+
+
+      .service-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .hero {
+        min-height: 75vh;
+      }
+
+
+      .about-image {
+        min-height: 360px;
+      }
+
+
+      nav ul:last-child li:not(:last-child) {
+        display: none;
+      }
+
+
+      .button-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+
+      .button-row a {
+        text-align: center;
+      }
+    }
+
+
+  </style>
+</head>
+
+
+
+
+<body>
+
+
+  <!-- Navigation -->
+
+
+  <nav class="container-fluid">
+
+
+    <ul>
+      <li>
+        <strong>Villate’s Hair Design</strong>
+      </li>
+    </ul>
+
+
+    <ul>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+
+      <li>
+        <a href="#contact" role="button" class="gold-button">
+          Contact
+        </a>
+      </li>
+    </ul>
+
+
+  </nav>
+
+
+
+
+  <main class="container">
+
+
+    <!-- HERO -->
+
+
+    <section class="hero">
+
+
+      <div class="hero-content">
+
+
+        <div class="eyebrow">
+          Margate, Florida
+        </div>
+
+
+        <h1>
+          Sharp Cuts.<br>
+          Classic Craft.
+        </h1>
+
+
+        <p>
+          Welcome to Villate’s Hair Design — your local destination
+          for full barber services, professional cuts, clean finishes,
+          and classic barbering in Margate, Florida.
+        </p>
+
+
+
+
+        <div class="button-row">
+
+
+          <!-- CALL BUTTON -->
+
+
+          <a
+            href="tel:+19549754662"
+            role="button"
+            class="gold-button"
+          >
+            📞 Call Now
+          </a>
+
+
+
+
+          <!-- DIRECTIONS BUTTON -->
+
+
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=5341%20W%20Atlantic%20Blvd%2C%20Margate%2C%20FL%2033063"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="button"
+            class="outline-button"
+          >
+            📍 Get Directions
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- SERVICES -->
+
+
+    <section id="services" class="services">
+
+
+      <div class="section-heading">
+
+
+        <div class="eyebrow">
+          What We Do
+        </div>
+
+
+        <h2>
+          Full Barber Services
+        </h2>
+
+
+        <p>
+          From classic barbering to modern styles, Villate’s Hair Design
+          offers a complete barber experience.
+        </p>
+
+
+      </div>
+
+
+
+
+      <div class="service-grid">
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">01</div>
+
+
+          <h3>
+            Haircuts
+          </h3>
+
+
+          <p>
+            Classic and contemporary haircuts tailored to your preferred
+            style and finish.
+          </p>
+
+
+        </article>
+
+
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">02</div>
+
+
+          <h3>
+            Fades
+          </h3>
+
+
+          <p>
+            Clean fades and detailed blending for a sharp, polished look.
+          </p>
+
+
+        </article>
+
+
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">03</div>
+
+
+          <h3>
+            Beard Services
+          </h3>
+
+
+          <p>
+            Professional beard trimming, shaping, detailing, and finishing.
+          </p>
+
+
+        </article>
+
+
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">04</div>
+
+
+          <h3>
+            Shaves
+          </h3>
+
+
+          <p>
+            Traditional barber shaving services designed for a clean,
+            comfortable finish.
+          </p>
+
+
+        </article>
+
+
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">05</div>
+
+
+          <h3>
+            Styling
+          </h3>
+
+
+          <p>
+            Finishing and styling to help you leave the chair looking
+            your best.
+          </p>
+
+
+        </article>
+
+
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">06</div>
+
+
+          <h3>
+            More
+          </h3>
+
+
+          <p>
+            Ask the shop about additional barber services and specialty
+            requests.
+          </p>
+
+
+        </article>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- ABOUT -->
+
+
+    <section id="about" class="about">
+
+
+      <div class="about-grid">
+
+
+        <div
+          class="about-image"
+          role="img"
+          aria-label="Professional barber cutting a client's hair"
+        ></div>
+
+
+
+
+        <div>
+
+
+          <div class="eyebrow">
+            The Shop
+          </div>
+
+
+          <h2>
+            Built Around the Craft.
+          </h2>
+
+
+          <p>
+            Villate’s Hair Design is a barber shop serving the Margate,
+            Florida community with full barber services and professional
+            attention to detail.
+          </p>
+
+
+          <p>
+            Whether you're looking for a fresh haircut, a clean fade,
+            beard work, a shave, or a complete new style, the goal is
+            simple: leave the chair looking sharp and feeling confident.
+          </p>
+
+
+          <a
+            href="tel:+19549754662"
+            role="button"
+            class="gold-button"
+          >
+            Call +1 (954) 975-4662
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- CONTACT -->
+
+
+    <section id="contact" class="contact">
+
+
+      <div class="section-heading">
+
+
+        <div class="eyebrow">
+          Get In Touch
+        </div>
+
+
+        <h2>
+          Ready for a Fresh Cut?
+        </h2>
+
+
+        <p>
+          Call Villate’s Hair Design for information about services,
+          availability, and appointments.
+        </p>
+
+
+      </div>
+
+
+
+
+      <div class="contact-grid">
+
+
+
+
+        <!-- PHONE -->
+
+
+        <article class="contact-card">
+
+
+          <h3>
+            Call Us
+          </h3>
+
+
+          <p>
+            Questions or want to check availability?
+          </p>
+
+
+          <a
+            class="phone"
+            href="tel:+19549754662"
+          >
+            +1 (954) 975-4662
+          </a>
+
+
+        </article>
+
+
+
+
+        <!-- ADDRESS -->
+
+
+        <article class="contact-card">
+
+
+          <h3>
+            Visit Us
+          </h3>
+
+
+          <p class="address">
+
+
+            Villate’s Hair Design<br>
+
+
+            5341 W Atlantic Blvd<br>
+
+
+            Margate, FL 33063
+
+
+          </p>
+
+
+
+
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=5341%20W%20Atlantic%20Blvd%2C%20Margate%2C%20FL%2033063"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="button"
+            class="gold-button"
+          >
+            📍 Get Directions
+          </a>
+
+
+        </article>
+
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+
+  <!-- CALL TO ACTION -->
+
+
+  <section class="cta">
+
+
+    <div class="container cta-content">
+
+
+      <div class="eyebrow">
+        Villate’s Hair Design
+      </div>
+
+
+      <h2>
+        Look Good.<br>
+        Feel Good.
+      </h2>
+
+
+      <p>
+        Full barber services in Margate, FL.
+      </p>
+
+
+
+
+      <div class="button-row" style="justify-content:center;">
+
+
+        <a
+          href="tel:+19549754662"
+          role="button"
+          class="gold-button"
+        >
+          📞 Call Now
+        </a>
+
+
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=5341%20W%20Atlantic%20Blvd%2C%20Margate%2C%20FL%2033063"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="button"
+          class="outline-button"
+        >
+          📍 Get Directions
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- SUBSCRIPTION -->
+
+
+  <section
+    aria-label="Subscribe"
+    style="background:#f4efe6;color:#111;"
+  >
+
+
+    <div class="container">
+
+
+      <article>
+
+
+        <hgroup>
+
+
+          <h2>
+            Stay in the Loop
+          </h2>
+
+
+          <h3>
+            Get shop updates and specials.
+          </h3>
+
+
+        </hgroup>
+
+
+
+
+        <form
+          class="grid"
+          onsubmit="event.preventDefault(); alert('The subscription form is currently a design preview.');"
+        >
+
+
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="First name"
+            aria-label="First name"
+            required
+          >
+
+
+
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+            aria-label="Email address"
+            required
+          >
+
+
+
+
+          <button
+            type="submit"
+            class="gold-button"
+          >
+            Subscribe
+          </button>
+
+
+        </form>
+
+
+      </article>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- FOOTER -->
+
+
+  <footer class="container">
+
+
+    <small>
+
+
+      © 2026 Villate’s Hair Design ·
+
+
+      5341 W Atlantic Blvd, Margate, FL 33063 ·
+
+
+      <a href="tel:+19549754662">
+        +1 (954) 975-4662
+      </a>
+
+
+    </small>
+
+
+  </footer>
+
+
+</body>
+</html>
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Villate’s Hair Design | Barber Shop in Margate, FL</title>
+
+
+  <meta
+    name="description"
+    content="Villate’s Hair Design — full barber services in Margate, Florida. Call +1 (954) 975-4662."
+  >
+
+
+  <!-- Pico CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+  >
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <style>
+
+
+    :root {
+      --gold: #c49a55;
+      --gold-light: #e1bd7a;
+      --black: #0d0d0d;
+      --dark: #151515;
+      --cream: #f4efe6;
+      --gray: #b8b8b8;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+      margin: 0;
+      background: var(--black);
+      color: white;
+      font-family: "Inter", sans-serif;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    nav strong {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+
+    /* Navigation */
+
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13, 13, 13, .96);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      backdrop-filter: blur(10px);
+    }
+
+
+    nav a {
+      color: white;
+    }
+
+
+    nav a:hover {
+      color: var(--gold-light);
+    }
+
+
+    nav strong {
+      letter-spacing: .08em;
+    }
+
+
+    /* Hero */
+
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(0,0,0,.94) 0%,
+          rgba(0,0,0,.78) 45%,
+          rgba(0,0,0,.30) 100%
+        ),
+        url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+    }
+
+
+    .hero-content {
+      max-width: 760px;
+      padding: 6rem 0;
+    }
+
+
+    .eyebrow {
+      color: var(--gold-light);
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+
+    h1 {
+      font-size: clamp(3.5rem, 9vw, 7rem);
+      line-height: .9;
+      margin: .6rem 0 1.5rem;
+    }
+
+
+    .hero p {
+      max-width: 620px;
+      color: #ddd;
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
+
+    /* Buttons */
+
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+
+    .gold-button {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #111;
+      font-weight: 700;
+    }
+
+
+    .gold-button:hover {
+      background: var(--gold-light);
+      border-color: var(--gold-light);
+      color: #111;
+    }
+
+
+    .outline-button {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.5);
+      color: white;
+    }
+
+
+    .outline-button:hover {
+      border-color: var(--gold-light);
+      color: var(--gold-light);
+    }
+
+
+    /* Sections */
+
+
+    section {
+      padding: 6rem 0;
+    }
+
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 3rem;
+    }
+
+
+    .section-heading p {
+      color: #999;
+      line-height: 1.8;
+    }
+
+
+    /* Services */
+
+
+    .services {
+      background: var(--dark);
+    }
+
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+
+    .service-card {
+      background: #202020;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 14px;
+      padding: 2.2rem;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(196,154,85,.6);
+    }
+
+
+    .service-number {
+      color: var(--gold);
+      font-family: "Oswald", sans-serif;
+      font-size: 1.5rem;
+    }
+
+
+    .service-card p {
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+
+    /* About */
+
+
+    .about {
+      background: var(--cream);
+      color: #151515;
+    }
+
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+
+    .about-image {
+      min-height: 500px;
+      border-radius: 16px;
+
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0,0,0,.05),
+          rgba(0,0,0,.45)
+        ),
+        url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=85")
+        center / cover;
+    }
+
+
+    .about p {
+      line-height: 1.9;
+      color: #555;
+    }
+
+
+    /* Contact */
+
+
+    .contact {
+      background: var(--black);
+    }
+
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+
+
+    .contact-card {
+      background: var(--dark);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 14px;
+      padding: 2.5rem;
+    }
+
+
+    .contact-card p {
+      color: var(--gray);
+      line-height: 1.8;
+    }
+
+
+    .phone {
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      font-weight: 700;
+    }
+
+
+    .address {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: white;
+    }
+
+
+    /* CTA */
+
+
+    .cta {
+      background:
+        linear-gradient(
+          rgba(0,0,0,.82),
+          rgba(0,0,0,.82)
+        ),
+        url("https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1800&q=85")
+        center / cover;
+
+
+      text-align: center;
+    }
+
+
+    .cta-content {
+      max-width: 700px;
+      margin: auto;
+    }
+
+
+    /* Footer */
+
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      color: #888;
+    }
+
+
+    footer a {
+      color: #aaa;
+    }
+
+
+    /* Mobile */
+
+
+    @media (max-width: 800px) {
+
+
+      .service-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .hero {
+        min-height: 75vh;
+      }
+
+
+      .about-image {
+        min-height: 360px;
+      }
+
+
+      nav ul:last-child li:not(:last-child) {
+        display: none;
+      }
+
+
+      .button-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+
+      .button-row a {
+        text-align: center;
+      }
+    }
+
+
+  </style>
+</head>
+
+
+
+
+<body>
+
+
+  <!-- Navigation -->
+
+
+  <nav class="container-fluid">
+
+
+    <ul>
+      <li>
+        <strong>Villate’s Hair Design</strong>
+      </li>
+    </ul>
+
+
+    <ul>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+
+      <li>
+        <a href="#contact" role="button" class="gold-button">
+          Contact
+        </a>
+      </li>
+    </ul>
+
+
+  </nav>
+
+
+
+
+  <main class="container">
+
+
+    <!-- HERO -->
+
+
+    <section class="hero">
+
+
+      <div class="hero-content">
+
+
+        <div class="eyebrow">
+          Margate, Florida
+        </div>
+
+
+        <h1>
+          Sharp Cuts.<br>
+          Classic Craft.
+        </h1>
+
+
+        <p>
+          Welcome to Villate’s Hair Design — your local destination
+          for full barber services, professional cuts, clean finishes,
+          and classic barbering in Margate, Florida.
+        </p>
+
+
+
+
+        <div class="button-row">
+
+
+          <!-- CALL BUTTON -->
+
+
+          <a
+            href="tel:+19549754662"
+            role="button"
+            class="gold-button"
+          >
+            📞 Call Now
+          </a>
+
+
+
+
+          <!-- DIRECTIONS BUTTON -->
+
+
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=5341%20W%20Atlantic%20Blvd%2C%20Margate%2C%20FL%2033063"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="button"
+            class="outline-button"
+          >
+            📍 Get Directions
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- SERVICES -->
+
+
+    <section id="services" class="services">
+
+
+      <div class="section-heading">
+
+
+        <div class="eyebrow">
+          What We Do
+        </div>
+
+
+        <h2>
+          Full Barber Services
+        </h2>
+
+
+        <p>
+          From classic barbering to modern styles, Villate’s Hair Design
+          offers a complete barber experience.
+        </p>
+
+
+      </div>
+
+
+
+
+      <div class="service-grid">
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">01</div>
+
+
+          <h3>
+            Haircuts
+          </h3>
+
+
+          <p>
+            Classic and contemporary haircuts tailored to your preferred
+            style and finish.
+          </p>
+
+
+        </article>
+
+
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">02</div>
+
+
+          <h3>
+            Fades
+          </h3>
+
+
+          <p>
+            Clean fades and detailed blending for a sharp, polished look.
+          </p>
+
+
+        </article>
+
+
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">03</div>
+
+
+          <h3>
+            Beard Services
+          </h3>
+
+
+          <p>
+            Professional beard trimming, shaping, detailing, and finishing.
+          </p>
+
+
+        </article>
+
+
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">04</div>
+
+
+          <h3>
+            Shaves
+          </h3>
+
+
+          <p>
+            Traditional barber shaving services designed for a clean,
+            comfortable finish.
+          </p>
+
+
+        </article>
+
+
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">05</div>
+
+
+          <h3>
+            Styling
+          </h3>
+
+
+          <p>
+            Finishing and styling to help you leave the chair looking
+            your best.
+          </p>
+
+
+        </article>
+
+
+
+
+        <article class="service-card">
+
+
+          <div class="service-number">06</div>
+
+
+          <h3>
+            More
+          </h3>
+
+
+          <p>
+            Ask the shop about additional barber services and specialty
+            requests.
+          </p>
+
+
+        </article>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- ABOUT -->
+
+
+    <section id="about" class="about">
+
+
+      <div class="about-grid">
+
+
+        <div
+          class="about-image"
+          role="img"
+          aria-label="Professional barber cutting a client's hair"
+        ></div>
+
+
+
+
+        <div>
+
+
+          <div class="eyebrow">
+            The Shop
+          </div>
+
+
+          <h2>
+            Built Around the Craft.
+          </h2>
+
+
+          <p>
+            Villate’s Hair Design is a barber shop serving the Margate,
+            Florida community with full barber services and professional
+            attention to detail.
+          </p>
+
+
+          <p>
+            Whether you're looking for a fresh haircut, a clean fade,
+            beard work, a shave, or a complete new style, the goal is
+            simple: leave the chair looking sharp and feeling confident.
+          </p>
+
+
+          <a
+            href="tel:+19549754662"
+            role="button"
+            class="gold-button"
+          >
+            Call +1 (954) 975-4662
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- CONTACT -->
+
+
+    <section id="contact" class="contact">
+
+
+      <div class="section-heading">
+
+
+        <div class="eyebrow">
+          Get In Touch
+        </div>
+
+
+        <h2>
+          Ready for a Fresh Cut?
+        </h2>
+
+
+        <p>
+          Call Villate’s Hair Design for information about services,
+          availability, and appointments.
+        </p>
+
+
+      </div>
+
+
+
+
+      <div class="contact-grid">
+
+
+
+
+        <!-- PHONE -->
+
+
+        <article class="contact-card">
+
+
+          <h3>
+            Call Us
+          </h3>
+
+
+          <p>
+            Questions or want to check availability?
+          </p>
+
+
+          <a
+            class="phone"
+            href="tel:+19549754662"
+          >
+            +1 (954) 975-4662
+          </a>
+
+
+        </article>
+
+
+
+
+        <!-- ADDRESS -->
+
+
+        <article class="contact-card">
+
+
+          <h3>
+            Visit Us
+          </h3>
+
+
+          <p class="address">
+
+
+            Villate’s Hair Design<br>
+
+
+            5341 W Atlantic Blvd<br>
+
+
+            Margate, FL 33063
+
+
+          </p>
+
+
+
+
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=5341%20W%20Atlantic%20Blvd%2C%20Margate%2C%20FL%2033063"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="button"
+            class="gold-button"
+          >
+            📍 Get Directions
+          </a>
+
+
+        </article>
+
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+
+  <!-- CALL TO ACTION -->
+
+
+  <section class="cta">
+
+
+    <div class="container cta-content">
+
+
+      <div class="eyebrow">
+        Villate’s Hair Design
+      </div>
+
+
+      <h2>
+        Look Good.<br>
+        Feel Good.
+      </h2>
+
+
+      <p>
+        Full barber services in Margate, FL.
+      </p>
+
+
+
+
+      <div class="button-row" style="justify-content:center;">
+
+
+        <a
+          href="tel:+19549754662"
+          role="button"
+          class="gold-button"
+        >
+          📞 Call Now
+        </a>
+
+
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=5341%20W%20Atlantic%20Blvd%2C%20Margate%2C%20FL%2033063"
+          target="_blank"
+          rel="noopener noreferrer"
+          role="button"
+          class="outline-button"
+        >
+          📍 Get Directions
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- SUBSCRIPTION -->
+
+
+  <section
+    aria-label="Subscribe"
+    style="background:#f4efe6;color:#111;"
+  >
+
+
+    <div class="container">
+
+
+      <article>
+
+
+        <hgroup>
+
+
+          <h2>
+            Stay in the Loop
+          </h2>
+
+
+          <h3>
+            Get shop updates and specials.
+          </h3>
+
+
+        </hgroup>
+
+
+
+
+        <form
+          class="grid"
+          onsubmit="event.preventDefault(); alert('The subscription form is currently a design preview.');"
+        >
+
+
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="First name"
+            aria-label="First name"
+            required
+          >
+
+
+
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+            aria-label="Email address"
+            required
+          >
+
+
+
+
+          <button
+            type="submit"
+            class="gold-button"
+          >
+            Subscribe
+          </button>
+
+
+        </form>
+
+
+      </article>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- FOOTER -->
+
+
+  <footer class="container">
+
+
+    <small>
+
+
+      © 2026 Villate’s Hair Design ·
+
+
+      5341 W Atlantic Blvd, Margate, FL 33063 ·
+
+
+      <a href="tel:+19549754662">
+        +1 (954) 975-4662
+      </a>
+
+
+    </small>
+
+
+  </footer>
+
+
+</body>
+</html>
+
+
+`````````````````````````
